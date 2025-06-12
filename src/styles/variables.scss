@@ -1,0 +1,46 @@
+:root {
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+
+  --color-gray-10: #191919;
+  --color-gray-15: #262626;
+  --color-gray-20: #333333;
+  --color-gray-30: #4C4C4D;
+  --color-gray-35: #59595A;
+  --color-gray-40: #656567;
+  --color-gray-60: #98989A;
+  --color-gray-70: #B3B3B3;
+
+  --color-orange-65: #FF8D4C;
+  --color-orange-70: #FF9E66;
+  --color-orange-75: #FF9E66;
+  --color-orange-80: #FFBE99;
+  --color-orange-90: #FFDECC;
+  --color-orange-95: #FFEFE5;
+  --color-orange-97: #FFF5F0;
+  --color-orange-99: #FFFCFA;
+
+
+  --border: var(--border-width) solid var(--color-gray-15);
+
+  --border-width: 2px;
+
+  --radius-l: 12px;
+  --radius-m: 10px;
+  --radius-s: 8px;
+  --radius-xs: 6px;
+
+  --font-family-base: 'Outfit', sans-serif;
+  --font-family-accent: 'Raleway', sans-serif;
+
+  --container-width: #{fluid-to-laptop(
+    $container-desktop-width,
+    $container-laptop-width
+  )};
+  --container-padding-x: 16px;
+
+  --section-padding-y: #{fluid(100, 40)};
+
+  --transition-duration: 0.2s;
+  --transition-duration-longer: 0.4s;
+}
