@@ -5,7 +5,26 @@ export const metadata = {
 export default function () {
   return (
     <>
-      <h1>Главная</h1>
+      <h1>Text</h1>
+      <h1>Text</h1>
+      <h1>Text</h1>
+      <h1>Text</h1>
+      <h1>Text</h1>
+      <h1>Text</h1>
+      <h1>Text</h1>
+      <h1>Text</h1>
+      <h1>Text</h1>
+      <h1>Text</h1>
+      <h1>Text</h1>
+      <h1>Text</h1>
+      <h1>Text</h1>
+      <h1>Text</h1>
+      <h1>Text</h1>
+      <h1>Text</h1>
+      <h1>Text</h1>
+      <h1>Text</h1>
+      <h1>Text</h1>
+      <h1>Text</h1>
     </>
   )
 }

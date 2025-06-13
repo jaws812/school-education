@@ -1,0 +1,17 @@
+.soc1als {
+  &__link{
+    @include hover{
+      color: inherit;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 14px;
+
+    @include mobile {
+      column-gap: 10px;
+    }
+  }
+}

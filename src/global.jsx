@@ -8,6 +8,7 @@ export default function (props) {
   const {
     children,
     title,
+    url,
   } = props
 
   return (
@@ -40,7 +41,11 @@ export default function (props) {
           href="/site.webmanifest"
         />
       </Head>
-      <Header />
+      <Header
+        url={url}
+        iconName="arrow-left"
+        hasFillIcon
+      />
       <Content>
         {children}
       </Content>
