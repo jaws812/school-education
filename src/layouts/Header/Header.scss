@@ -9,7 +9,8 @@
   display: flex;
   flex-direction: column;
   row-gap: 14px;
-  padding: fluid-to-laptop(18, 16) fluid(50, 16);
+  padding-inline: fluid(50, 16);
+  padding-top: fluid-to-laptop(18, 16);
 
   text-align: center;
 

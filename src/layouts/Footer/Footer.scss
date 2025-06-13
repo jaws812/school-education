@@ -14,9 +14,10 @@
     padding-top: fluid-to-laptop(100, 80);
     border: var(--border);
     border-radius: var(--radius-12);
-    box-shadow: 6px 6px 0 1px #1E1E1E;
+    box-shadow: 6px 6px 0 2px #1E1E1E;
 
     @include mobile {
+      box-shadow: 6px 6px 0 1px #1E1E1E;
       padding-inline: 25px;
       padding-bottom: 30px;
       padding-top: 60px;
@@ -24,7 +25,9 @@
   }
 
   &__logo {
-    align-self: center;
+    @include mobile {
+      align-self: center;
+    }
   }
 
   &__body {

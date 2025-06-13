@@ -12,6 +12,7 @@ body {
   font-family: var(--font-family-base);
   color: var(--color-gray-20);
   background-color: var(--color-orange-97);
+  font-weight: 500;
 }
 
 main {
@@ -32,36 +33,42 @@ h1, .h1 {
   @include fluid-text(58, 38);
 
   font-weight: 700;
+  line-height: 1.3;
 }
 
 h2, .h2 {
   @include fluid-text(54, 30);
 
   font-weight: 800;
+  line-height: 1.3;
 }
 
 h3, .h3 {
   @include fluid-text(48, 28);
 
   font-weight: 700;
+  line-height: 1.3;
 }
 
 h4, .h4 {
   @include fluid-text(28, 22);
 
   font-weight: 700;
+  line-height: 1.3;
 }
 
 h5, .h5 {
   @include fluid-text(24, 20);
 
   font-weight: 600;
+  line-height: 1.5;
 }
 
 h6, .h6 {
   @include fluid-text(22, 18);
 
   font-weight: 600;
+  line-height: 1.5;
 }
 
 a,

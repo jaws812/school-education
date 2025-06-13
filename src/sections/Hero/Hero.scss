@@ -1,0 +1,76 @@
+.hero {
+  padding-top: fluid(80,50);
+  padding-bottom: 100px;
+
+  &__body {
+    display: grid;
+    gap: fluid(60, 40);
+    @include tablet-above {
+      grid-template-columns: 48% 1fr;
+    }
+
+    @include tablet {
+      text-align: center;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include tablet {
+      align-items: center;
+    }
+  }
+
+  &__subtitle {
+    @include fluid-text(22, 16);
+    font-weight: 500;
+    border-bottom: var(--border);
+
+    @include tablet-above {
+      align-self: start;
+    }
+  }
+
+  &__title {
+    line-height: 1.3;
+
+    &-accent {
+      color: var(--color-orange-65);
+    }
+
+    @include tablet {
+      margin-top: 10px;
+    }
+  }
+
+  &__description {
+    font-weight: 500;
+    padding-top: fluid(30, 18);
+    padding-bottom: fluid(60, 40);
+  }
+
+  &__image {
+    width: fluid(765, 358);
+    justify-self: center;
+    object-fit: cover;
+  }
+
+  &__metric {
+    background-color: var(--color-orange-95);
+    border: var(--border);
+    border-radius: var(--radius-12);
+    box-shadow: 8px 8px 0 1px var(--color-orange-80);
+
+    @include laptop {
+      border-radius: var(--radius-10);
+    }
+
+    @include mobile {
+      box-shadow: 4px 4px 0px 1px var(--color-orange-80);
+      width: 100%;
+    }
+  }
+}
