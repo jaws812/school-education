@@ -26,7 +26,6 @@
 
   &__subtitle {
     @include fluid-text(22, 16);
-    font-weight: 500;
     border-bottom: var(--border);
 
     @include tablet-above {
@@ -47,7 +46,6 @@
   }
 
   &__description {
-    font-weight: 500;
     padding-top: fluid(30, 18);
     padding-bottom: fluid(60, 40);
   }

@@ -41,7 +41,6 @@
   }
 
   &__info {
-    font-weight: 500;
     display: flex;
     flex-direction: column;
     row-gap: fluid-to-laptop(50, 40);
@@ -109,10 +108,6 @@
       font-weight: 600;
     }
 
-    &-link {
-      font-weight: 500;
-    }
-
     &-list {
       display: flex;
       flex-direction: column;
@@ -136,7 +131,6 @@
 
     &-link {
       @include fluid-text(18, 14);
-      font-weight: 500;
 
       &:not(:first-child) {
         padding-left: fluid(16, 6);
@@ -157,9 +151,6 @@
     text-align: center;
     padding-top: fluid(30, 16);
     @include fluid-text(18, 14);
-    font-weight: 500;
     color: var(--color-gray-40);
   }
-
-
 }
