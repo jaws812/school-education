@@ -14,10 +14,10 @@
     padding-top: fluid-to-laptop(100, 80);
     border: var(--border);
     border-radius: var(--radius-12);
-    box-shadow: 6px 6px 0 2px #1E1E1E;
+    box-shadow: 6px 6px 0 2px var(--color-shadow);
 
     @include mobile {
-      box-shadow: 6px 6px 0 1px #1E1E1E;
+      box-shadow: 6px 6px 0 1px var(--color-shadow);
       padding-inline: 25px;
       padding-bottom: 30px;
       padding-top: 60px;

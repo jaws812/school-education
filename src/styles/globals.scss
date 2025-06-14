@@ -61,14 +61,12 @@ h5, .h5 {
   @include fluid-text(24, 20);
 
   font-weight: 600;
-  line-height: 1.5;
 }
 
 h6, .h6 {
   @include fluid-text(22, 18);
 
   font-weight: 600;
-  line-height: 1.5;
 }
 
 a,

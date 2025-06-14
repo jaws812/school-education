@@ -1,0 +1,34 @@
+.education-card {
+  background-color: var(--color-white);
+  border: var(--border);
+  border-radius: var(--radius-12);
+  box-shadow: 6px 6px 0 2px var(--color-shadow);
+  height: 100%;
+
+
+  @include laptop {
+    border-radius: var(--radius-10);
+    box-shadow: 4px 4px 0 2px var(--color-shadow);
+  }
+
+  @include mobile {
+    box-shadow: 4px 4px 0 1px var(--color-shadow);
+  }
+
+  &__body {
+    --paddingInlineEducationCard: #{fluid-to-laptop(50, 40)};
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    row-gap: fluid-to-laptop(20, 16);
+    padding-inline: var(--paddingInlineEducationCard);
+    padding-top: fluid(80, 50);
+    padding-bottom: fluid(50, 30);
+
+    @include mobile {
+      padding-left: 30px;
+      padding-right: 40px;
+    }
+  }
+}

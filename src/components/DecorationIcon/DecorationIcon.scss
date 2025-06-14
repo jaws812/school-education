@@ -1,0 +1,26 @@
+.decoration {
+  &__wrapper {
+    position: absolute;
+    left: fluid(30, 24);
+    top: 0;
+    translate: 0 -50%;
+
+
+    padding: fluid-to-laptop(20, 16);
+    display: inline-block;
+    line-height: 0.6;
+    background-color: var(--color-orange-90);
+    border-radius: var(--radius-12);
+    border: var(--border);
+
+    @include tablet {
+      border-radius: var(--radius-8);
+    }
+  }
+
+  &__icon {
+    &.icon {
+      --iconSize: #{fluid-to-laptop(34,24)};
+    }
+  }
+}
