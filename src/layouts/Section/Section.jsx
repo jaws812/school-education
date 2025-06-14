@@ -9,11 +9,15 @@ const Section = (props) => {
     title,
     description,
     titleId,
+    flex,
+    extraAttrs
   } = props
 
   return (
     <section
-      className={classNames(className, 'section container')}
+      className={classNames(className, 'section container', {
+        [`section--${flex}`]: flex,
+      })}
       aria-labelledby={titleId}
     >
       <header className="section__header">
@@ -28,7 +32,12 @@ const Section = (props) => {
           </div>
         </div>
       </header>
-      <div className="section__body">
+      <div
+        className={classNames(className, 'section__body', {
+          [`section__body--${flex}`]: flex,
+        })}
+        {...extraAttrs}
+      >
         {children}
       </div>
     </section>

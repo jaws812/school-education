@@ -1,0 +1,11 @@
+.reviews {
+  &-contaner {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    @include mobile-above {
+      @include visually-hidden;
+    }
+  }
+}

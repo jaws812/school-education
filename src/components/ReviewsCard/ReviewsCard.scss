@@ -1,0 +1,41 @@
+.reviews-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: fluid(30, 20);
+  background-color: var(--color-white);
+  border: var(--border);
+  border-radius: var(--radius-12);
+  box-shadow: 6px 6px 0px 2px var(--color-shadow);
+  padding: fluid(50, 30);
+  max-width: fluid(420, 340);
+
+  @include tablet {
+    border-radius: var(--radius-10);
+    box-shadow: var(--box-shadow-tablet);
+  }
+
+  @include mobile {
+    box-shadow: var(--box-shadow-mobile);
+  }
+
+
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid-to-laptop(12, 10);
+    align-items: center;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(30, 20);
+    align-items: center;
+  }
+
+  &__description {
+    text-align: center;
+  }
+}
+

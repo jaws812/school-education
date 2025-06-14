@@ -1,5 +1,6 @@
 import Hero from "@/sections/Hero/index.js";
 import Benefits from "@/sections/Benefits/index.js";
+import Reviews from "@/sections/Reviews/index.js";
 
 export const metadata = {
   title: 'Home',
@@ -8,8 +9,9 @@ export const metadata = {
 export default function () {
   return (
     <>
-      <Hero/>
-      <Benefits/>
+      <Hero />
+      <Benefits />
+      <Reviews />
     </>
   )
 }

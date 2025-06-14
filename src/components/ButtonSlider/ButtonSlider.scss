@@ -1,0 +1,11 @@
+.button-slider {
+  @include flex-center(true);
+  border-radius: var(--radius-8);
+  border: var(--border);
+  background-color: var(--color-white);
+  padding: fluid-to-laptop(14, 12);
+
+  &[disabled]{
+    pointer-events: none;
+  }
+}

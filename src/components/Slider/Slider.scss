@@ -1,0 +1,12 @@
+.slider {
+
+}
+
+.swiper {
+  padding: fluid(10, 8);
+
+  &-slide {
+    display: flex;
+    justify-content: center;
+  }
+}

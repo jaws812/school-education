@@ -31,4 +31,16 @@
       max-width: 358px;
     }
   }
+
+  &__body {
+    &--flex {
+      display: flex;
+      align-items: center;
+      gap: fluid-to-laptop(50, 40) 40px;
+
+      @include mobile {
+        display: block;
+      }
+    }
+  }
 }
