@@ -4,10 +4,7 @@ import ReviewsCard from "@/components/ReviewsCard/index.js";
 import Slider from "@/components/Slider/index.js";
 import ButtonSlider from "@/components/ButtonSlider/index.js";
 
-const Reviews = (props) => {
-  const {
-    className,
-  } = props
+const Reviews = () => {
 
   const reviewItems = [
     {

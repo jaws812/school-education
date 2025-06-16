@@ -1,7 +1,5 @@
 import 'swiper/css';
 import './Slider.scss'
-// import SliderNavigation
-//   from "@/components/Slider/components/SliderNavigation/SliderNavigation/index.js";
 import classNames from "classnames";
 
 const defaultSliderParams = {
@@ -27,7 +25,6 @@ const defaultSliderParams = {
     1024: {
       spaceBetween: 40,
       allowTouchMove: false,
-      // такое правило действует от 1024 до 1441
     },
     1441: {
       spaceBetween: 50,
@@ -39,17 +36,8 @@ const defaultSliderParams = {
 const Slider = (props) => {
   const {
     children,
-    // navigationTargetElementId = null,
     sliderParams = defaultSliderParams,
     isBeyondTheViewportOnMobileS,
-    hasScrollBarOnMobile = true,
-    /*
-    (default) | 'abs-bottom'
-    */
-    navigationPosition = '',
-    navigationMode,
-    isNavigationHiddenMobile = true,
-    navigationJustifyContent
   } = props
 
   return (
@@ -59,7 +47,6 @@ const Slider = (props) => {
       })}
       data-js-slider={JSON.stringify({
         sliderParams,
-        // navigationTargetElementId,
       })}
 
     >
@@ -78,23 +65,6 @@ const Slider = (props) => {
           ))}
         </ul>
       </div>
-
-      {/*{!navigationTargetElementId && (
-        <SliderNavigation
-          className="slider__navigation"
-          mode={navigationMode}
-          position={navigationPosition}
-          isHiddenMobile={isNavigationHiddenMobile}
-          justifyContent={navigationJustifyContent}
-        />
-      )}
-
-      {hasScrollBarOnMobile && (
-        <div
-          className="slider__scrollbar visible-mobile"
-          data-js-slider-scrollbar=""
-        ></div>
-      )}*/}
     </div>
   )
 }

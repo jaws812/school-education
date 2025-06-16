@@ -1,4 +1,5 @@
 .reviews-card {
+  width: 100%;
   display: flex;
   flex-direction: column;
   row-gap: fluid(30, 20);
@@ -18,7 +19,11 @@
     box-shadow: var(--box-shadow-mobile);
   }
 
-
+  &__image {
+    border-radius: 50%;
+    border: var(--border-s);
+    width: fluid-to-laptop(80, 66);
+  }
 
   &__header {
     display: flex;
@@ -36,6 +41,10 @@
 
   &__description {
     text-align: center;
+  }
+
+  &__title{
+    font-family: var(--font-family-base);
   }
 }
 

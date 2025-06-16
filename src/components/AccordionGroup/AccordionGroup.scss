@@ -1,0 +1,27 @@
+.accordion-group {
+  &--2-columns {
+    column-gap: fluid-to-laptop(50, 40);
+
+    @include tablet-above {
+      column-count: 2;
+    }
+  }
+
+  &__item {
+    padding: fluid(34, 20) fluid(40, 24);
+    border: var(--border);
+    border-radius: var(--radius-12);
+    break-inside: avoid-column;
+    margin-bottom: fluid(30, 20);
+    background-color: var(--color-orange-95);
+
+    &:has(.accordion):has(.accordion__details[open]) {
+      padding-block: 30px;
+      background-color: var(--color-white);
+    }
+
+    @include tablet {
+      border-radius: var(--radius-10);
+    }
+  }
+}

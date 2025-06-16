@@ -18,7 +18,6 @@ const EducationCard = (props) => {
           className='education-card__icon'
           srcName={imgSrc}
           ariaLabel='education'
-
         />
         <h3 className="education-card__title h4">{title}</h3>
         <div className="education-card__description">{description}</div>

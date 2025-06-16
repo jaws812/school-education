@@ -17,7 +17,7 @@ const ReviewsCard = (props) => {
       className={classNames(className, 'reviews-card')}
     >
       <header className="reviews-card__header">
-        <Image src={srcImg} />
+        <Image className='reviews-card__image' src={srcImg} />
         <h3 className="reviews-card__title h5">{title}</h3>
       </header>
       <div className="reviews-card__body">

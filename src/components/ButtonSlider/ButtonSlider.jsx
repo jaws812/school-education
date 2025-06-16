@@ -6,7 +6,6 @@ const ButtonSlider = (props) => {
   const {
     className,
     leftSideButton = true,
-    // iconName = 'arrow-left' | 'arrow-right'
     mode,
     type = 'button',
     hasFill,

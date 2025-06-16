@@ -1,5 +1,4 @@
 import './Benefits.scss'
-import classNames from 'classnames'
 import Section from "@/layouts/Section/index.js";
 import Grid from "@/components/Grid/index.js";
 import EducationCard from "@/components/EducationCard/index.js";

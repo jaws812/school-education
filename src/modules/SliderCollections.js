@@ -25,9 +25,6 @@ class Slider {
     this.previousButtonMobileElement = this.sliderBody.querySelector(this.selectors.previousButtonMobile)
     this.nextButtonMobileElement = this.sliderBody.querySelector(this.selectors.nextButtonMobile)
     this.init()
-
-    console.log(document.documentElement.clientWidth)
-    console.log(window.innerWidth)
   }
 
   init() {
@@ -39,20 +36,8 @@ class Slider {
     new Swiper(this.swiperElement, {
       ...this.params.sliderParams,
       modules: [Navigation],
-      navigation: {
-        prevEl: navigation.prevEl,
-        nextEl: navigation.nextEl,
-      },
+      navigation: navigation,
     })
-
-    /* new Swiper(this.swiperElement, {
-       ...this.params.sliderParams,
-       modules: [Navigation],
-       navigation: {
-         prevEl: this.previousButtonMobileElement,
-         nextEl: this.nextButtonMobileElement,
-       },
-     })*/
   }
 }
 
