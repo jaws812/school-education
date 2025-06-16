@@ -14,6 +14,7 @@
     cursor: pointer;
     flex-shrink: 0;
     background-color: var(--color-orange-97);
+    transition-duration: var(--transition-duration);
 
     &::before,
     &::after {

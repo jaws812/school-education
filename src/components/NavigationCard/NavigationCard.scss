@@ -40,10 +40,24 @@
     width: 100%;
     padding: 18px;
     box-shadow: var(--box-shadow-tablet);
+    column-gap: 10px;
 
     @include mobile {
       box-shadow: var(--box-shadow-mobile-s);
       padding: 16px;
     }
+
+    @include hover{
+      color: var(--color-white);
+      scale: 1.05;
+    }
+
+    .button__icon{
+      @include square(fluid(30,20));
+    }
+  }
+
+  &__description {
+    margin-top: fluid(20, 10);
   }
 }
