@@ -4,6 +4,10 @@
   row-gap: fluid(100, 50);
   padding-block: var(--section-padding-y);
 
+  &__title{
+    text-align: center;
+  }
+  
   &__info {
     display: flex;
     flex-direction: column;

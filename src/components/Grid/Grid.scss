@@ -1,5 +1,5 @@
 .grid {
-  --absoluteGap: 50px;
+  --absoluteGap: #{fluid-to-laptop(50, 40)};
   --gridColumns: 1;
   display: grid;
   grid-template-columns: repeat(var(--gridColumns), 1fr);
@@ -12,6 +12,10 @@
 
   &--2 {
     --gridColumns: 2;
+
+    @include tablet {
+      --gridColumns: 1;
+    }
   }
 
   &--3 {
