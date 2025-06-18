@@ -1,4 +1,9 @@
 .reviews {
+  &__icon{
+    &.icon{
+      --iconSize: #{fluid-to-laptop(30, 24)};
+    }
+  }
   &-contaner {
     padding-top: 40px;
     display: flex;

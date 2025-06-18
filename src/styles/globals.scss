@@ -95,12 +95,12 @@ a {
   @include focus-visible;
 }
 
-:has(.swiper){
+:has(.swiper) {
   min-width: 0;
 }
 
 .header,
 .content > *:not(:nth-last-child(1)),
 .footer {
-//    display: none !important;
+  display: none !important;
 }

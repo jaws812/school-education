@@ -37,4 +37,8 @@
   &--benefits-row-gap {
     --absoluteGap: #{fluid-to-laptop(85,68)} 40px;
   }
+
+  &--feature-row-gap {
+    --absoluteGap: #{fluid-to-laptop(85,68)} 40px;
+  }
 }

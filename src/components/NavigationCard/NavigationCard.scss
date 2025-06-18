@@ -12,7 +12,7 @@
   align-items: center;
   row-gap: fluid(80, 40);
 
-  @include tablet {
+  @include laptop {
     box-shadow: var(--box-shadow-tablet);
     border-radius: var(--radius-10);
   }

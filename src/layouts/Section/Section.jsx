@@ -15,9 +15,7 @@ const Section = (props) => {
 
   return (
     <section
-      className={classNames(className, 'section container', {
-        [`section--${flex}`]: flex,
-      })}
+      className={classNames(className, 'section container')}
       aria-labelledby={titleId}
     >
       <header className="section__header">

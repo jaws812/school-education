@@ -5,7 +5,11 @@
   background-color: var(--color-white);
   padding: fluid-to-laptop(14, 12);
 
-  &[disabled]{
+  &.icon {
+    --iconSize: fluid-to-laptop(30, 24);
+  }
+
+  &[disabled] {
     pointer-events: none;
   }
 }

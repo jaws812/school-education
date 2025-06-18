@@ -4,10 +4,10 @@
   row-gap: fluid(100, 50);
   padding-block: var(--section-padding-y);
 
-  &__title{
+  &__title {
     text-align: center;
   }
-  
+
   &__info {
     display: flex;
     flex-direction: column;
@@ -45,6 +45,12 @@
       @include mobile {
         display: block;
       }
+    }
+
+    &--flex-column {
+      display: flex;
+      flex-direction: column;
+      row-gap: fluid(50, 30);
     }
   }
 }

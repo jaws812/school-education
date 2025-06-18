@@ -10,7 +10,7 @@
   padding: fluid(50, 30);
   max-width: fluid(420, 340);
 
-  @include tablet {
+  @include laptop {
     border-radius: var(--radius-10);
     box-shadow: var(--box-shadow-tablet);
   }

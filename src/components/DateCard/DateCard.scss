@@ -1,0 +1,33 @@
+.date-card {
+  padding: fluid(30, 20) fluid(50, 24);
+  border: var(--border);
+  background-color: var(--color-white);
+  border-radius: var(--radius-12);
+  box-shadow: var(--box-shadow-desktop);
+  min-width: 45%;
+
+  @include laptop {
+    border-radius: var(--radius-10);
+    box-shadow: var(--box-shadow-tablet);
+  }
+
+  @include mobile {
+    align-self: start;
+  }
+
+  &__body {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+  }
+
+  &__image {
+    width: fluid(87, 50);
+  }
+
+  &__year {
+    @include fluid-text(68, 38);
+    font-weight: 700;
+    font-family: var(--font-family-accent);
+  }
+}

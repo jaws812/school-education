@@ -1,0 +1,32 @@
+.mission-card {
+  padding: fluid(60, 40);
+  background-color: var(--color-white);
+  border: var(--border);
+  box-shadow: var(--box-shadow-desktop);
+  border-radius: var(--radius-12);
+  height: 100%;
+
+  @include laptop {
+    box-shadow: var(--box-shadow-tablet);
+    border-radius: var(--radius-10);
+  }
+
+  @include mobile {
+    box-shadow: var(--box-shadow-mobile);
+  }
+
+  &__body {
+    display: grid;
+    row-gap: fluid(60, 40);
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__image {
+    width: fluid(80, 50);
+  }
+}

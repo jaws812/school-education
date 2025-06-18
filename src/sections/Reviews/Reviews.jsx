@@ -114,6 +114,7 @@ const Reviews = () => {
       />
       <div className="reviews-contaner">
         <ButtonSlider
+          classNameIcon='reviews__icon'
           hasFill
           label='Previous slide'
           leftSideButton={true}
@@ -122,6 +123,7 @@ const Reviews = () => {
           }}
         />
         <ButtonSlider
+          classNameIcon='reviews__icon'
           hasFill
           label='Next slide'
           leftSideButton={false}

@@ -1,10 +1,11 @@
 .footer {
   padding-inline: 50px;
-  padding-block: fluid-to-laptop(50, 40);
+  padding-bottom: fluid-to-laptop(50, 40);
+  padding-top: var(--section-padding-y);
 
   @include tablet {
     padding-inline: 16px;
-    padding-block: 20px;
+    padding-bottom: 20px;
   }
 
   &__inner {

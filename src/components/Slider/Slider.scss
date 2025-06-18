@@ -1,4 +1,9 @@
 .slider {
+  &__swiper {
+    &:has(.education-card) {
+      padding-top: fluid(38, 28);
+    }
+  }
 }
 
 .swiper {

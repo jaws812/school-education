@@ -1,13 +1,9 @@
 import './Navigation.scss'
-import classNames from 'classnames'
 import Section from "@/layouts/Section/index.js";
 import NavigationCard from "@/components/NavigationCard/index.js";
 import Grid from "@/components/Grid/index.js";
 
-const Navigation = (props) => {
-  const {
-    className,
-  } = props
+const Navigation = () => {
 
   const navigationItems = [
     {

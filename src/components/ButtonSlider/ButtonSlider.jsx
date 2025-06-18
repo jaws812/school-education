@@ -5,6 +5,7 @@ import Icon from "@/components/Icon/index.js";
 const ButtonSlider = (props) => {
   const {
     className,
+    classNameIcon,
     leftSideButton = true,
     mode,
     type = 'button',
@@ -27,6 +28,7 @@ const ButtonSlider = (props) => {
       {...extraAttrs}
     >
       <Icon
+        className={classNames(classNameIcon)}
         name={leftSideButton ? 'arrow-slider-left' : 'arrow-slider-right'}
         hasFill={hasFill}
         ariaLabel={leftSideButton ? 'Arrow left' : 'Arrow right'}

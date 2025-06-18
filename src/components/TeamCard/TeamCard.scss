@@ -1,0 +1,68 @@
+.team-card {
+  height: 100%;
+  display: grid;
+  row-gap: fluid-to-laptop(30, 24);
+  padding: fluid(50, 30);
+  border: var(--border);
+  border-radius: var(--radius-12);
+  box-shadow: var(--box-shadow-desktop);
+  background-color: var(--color-white);
+
+  @include laptop {
+    border-radius: var(--radius-10);
+    box-shadow: var(--box-shadow-mobile);
+
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    column-gap: fluid(16, 10);
+  }
+
+  &__image {
+    width: fluid(100, 60);
+    border: var(--border);
+    border-radius: var(--radius-12);
+
+    @include laptop {
+      border-radius: var(--radius-10);
+    }
+
+    @include mobile {
+      border-radius: var(--radius-8);
+    }
+  }
+
+  &__name {
+    @include fluid-text(30, 20);
+    font-weight: 800;
+  }
+
+  &__link {
+    margin-left: auto;
+    background-color: var(--color-orange-90);
+    @include hover {
+      background-color: var(--color-orange-90);
+      color: var(--color-orange-65);
+    }
+  }
+
+  &__body {
+    display: grid;
+    row-gap: fluid(20, 12);
+    padding: fluid(30, 20);
+    background-color: var(--color-orange-97);
+    border: var(--border);
+    border-radius: var(--radius-12);
+
+    @include laptop {
+      border-radius: var(--radius-10);
+    }
+
+    &-title {
+      font-size: fluid-to-laptop(24, 20);
+      font-weight: 600;
+    }
+  }
+}

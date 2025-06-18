@@ -66,7 +66,6 @@ const Footer = () => {
                     hasFill
                   />
                 </a>
-
                 <a
                   className="footer__action-link"
                   href="mailto:hello@littlelearners.com"

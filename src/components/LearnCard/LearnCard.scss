@@ -1,0 +1,81 @@
+.learn-card {
+  --paddingGapCard: #{fluid(50, 30)};
+
+  height: 100%;
+  padding: var(--paddingGapCard);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: fluid(50, 30);
+  background-color: var(--color-white);
+  border: var(--border);
+  border-radius: var(--radius-12);
+  box-shadow: var(--box-shadow-desktop);
+
+  @include laptop {
+    border-radius: var(--radius-10);
+    box-shadow: var(--box-shadow-mobile);
+  }
+
+  &__image {
+    position: relative;
+    z-index: 1;
+    border: var(--border);
+    border-radius: var(--radius-12);
+    width: fluid(398, 298);
+
+    @include laptop {
+      border-radius: var(--radius-10);
+    }
+
+    /*    &::after {
+          position: absolute;
+          content: 'dsadsa';
+          width: 100px;
+          height: 100px;
+          top: 0;
+          left: 0;
+          background-color: var(--color-orange-95);
+          border: var(--border);
+          z-index: -1;
+        }*/
+
+  }
+
+  &__body {
+    display: grid;
+    row-gap: fluid(20, 10);
+    text-align: center;
+  }
+
+  &__wrapper {
+    --bottomGap: #{fluid(30, 16)};
+
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: fluid(125, 93);
+      height: var(--bottomGap);
+      bottom: calc(var(--bottomGap) * (-1) + var(--border-width));
+      left: 34%;
+      background-color: var(--color-orange-95);
+      border: var(--border);
+      border-bottom-left-radius: var(--radius-12);
+      border-bottom-right-radius: var(--radius-12);
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: fluid(125, 93);
+      height: calc(var(--paddingGapCard) + var(--border-width) * 2);
+      top: calc(var(--paddingGapCard) * (-1) - var(--border-width));
+      left: 34%;
+      background-color: var(--color-orange-95);
+      border: var(--border);
+      z-index: 1;
+    }
+  }
+}
