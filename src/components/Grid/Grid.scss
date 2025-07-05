@@ -41,4 +41,8 @@
   &--feature-row-gap {
     --absoluteGap: #{fluid-to-laptop(85,68)} 40px;
   }
+
+  &--process-gap{
+    row-gap: fluid-to-laptop(100, 50);
+  }
 }

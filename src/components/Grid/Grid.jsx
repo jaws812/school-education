@@ -15,7 +15,7 @@ const Grid = (props) => {
         [`grid--${rowGapClassName}`]: rowGapClassName,
       })}
     >
-      {children.map((child, index) => (
+      {children?.map((child, index) => (
         <li
           className="grid__item"
           key={index}

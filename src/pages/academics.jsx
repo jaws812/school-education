@@ -1,6 +1,7 @@
 import TitleAcademics from "@/sections/TitleAcademics/index.js";
 import Features from "@/sections/Features/index.js";
 import Learn from "@/sections/Learn/index.js";
+import Gallery from "@/sections/Gallery/index.js";
 
 
 export const metadata = {
@@ -13,6 +14,7 @@ export default function () {
       <TitleAcademics />
       <Features />
       <Learn />
+      {/*<Gallery />*/}
     </>
   )
 }
