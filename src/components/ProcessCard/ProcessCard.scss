@@ -1,0 +1,68 @@
+.process-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: fluid-to-laptop(77, 50);
+
+  &__body {
+    background-color: var(--color-white);
+    flex-grow: 1;
+    border: var(--border);
+    border-radius: var(--radius-12);
+    box-shadow: var(--box-shadow-desktop);
+    padding: fluid(50, 30);
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(20, 14);
+
+    @include laptop {
+      border-radius: var(--radius-10);
+      box-shadow: var(--box-shadow-mobile);
+    }
+  }
+
+  &__title {
+    @include fluid-text(40, 26);
+    font-weight: 700;
+    font-family: var(--font-family-accent);
+  }
+
+  &__action {
+    position: relative;
+    padding: fluid(14, 10) fluid(30, 24);
+    align-self: flex-start;
+    border: var(--border);
+    border-radius: var(--radius-12);
+    box-shadow: var(--box-shadow-desktop);
+    background-color: var(--color-white);
+    z-index: -1;
+
+    @include laptop {
+      border-radius: var(--radius-10);
+      box-shadow: var(--box-shadow-mobile);
+    }
+
+    @include mobile {
+      align-self: center;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 91%;
+      left: 0;
+      width: fluid(132, 96);
+      height: fluid-to-laptop(89, 63);
+      background-image: url('src/assets/images/process/decoration-line.png');
+      background-size: fluid(132, 96) fluid-to-laptop(89, 63);
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__number {
+    font-family: var(--font-family-accent);
+    font-weight: 800;
+    @include fluid-text(60, 40);
+  }
+}

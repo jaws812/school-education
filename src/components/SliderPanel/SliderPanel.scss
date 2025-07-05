@@ -1,0 +1,21 @@
+.slider-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__text {
+    font-weight: 700;
+    @include fluid-text(40, 28);
+  }
+
+  &__buttons {
+    display: flex;
+    column-gap: fluid-to-laptop(20, 16);
+  }
+
+  &__icon {
+    &.icon {
+      --iconSize: #{fluid-to-laptop(30, 24)};
+    }
+  }
+}

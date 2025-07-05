@@ -1,0 +1,27 @@
+.gallery-card {
+  padding: fluid(50, 30);
+  padding-top: fluid(200, 120);
+  background-color: var(--color-white);
+  border: var(--border);
+  border-radius: var(--radius-12);
+  box-shadow: var(--box-shadow-desktop);
+
+  @include laptop {
+    border-radius: var(--radius-12);
+    box-shadow: var(--box-shadow-mobile);
+
+  }
+
+  &__body {
+    display: grid;
+    row-gap: fluid(40, 20);
+  }
+
+  &__description {
+    @include fluid-text(22, 18);
+
+    @include tablet {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.tabs-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: fluid-to-laptop(15, 10);
+
+  &__button {
+    font-weight: 600;
+    padding: fluid-to-laptop(14, 10) fluid-to-laptop(20, 16);
+    background-color: var(--color-white);
+    border: var(--border);
+    border-radius: var(--radius-8);
+    transition-duration: var(--transition-duration);
+    cursor: pointer;
+    user-select: none;
+
+    @include hover{
+      background-color: var(--color-orange-65);
+      color: var(--color-white);
+    }
+
+    @include laptop {
+      border-radius: var(--radius-6);
+    }
+
+    &.is-active {
+      background-color: var(--color-orange-95);
+      pointer-events: none;
+    }
+  }
+}
