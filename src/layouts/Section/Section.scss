@@ -47,6 +47,11 @@
       }
     }
 
+    &--row-gap {
+      display: grid;
+      row-gap: fluid(80, 40);
+    }
+
     &--flex-column {
       display: flex;
       flex-direction: column;

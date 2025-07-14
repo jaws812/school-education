@@ -21,8 +21,8 @@ const Header = (props) => {
       href: './academics',
     },
     {
-      label: 'Admissions',
-      href: './admissions',
+      label: 'Admission',
+      href: './admission',
     },
     {
       label: 'Student Life',

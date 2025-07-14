@@ -1,9 +1,9 @@
 import './Benefits.scss'
-import Section from "@/layouts/Section/index.js";
-import Grid from "@/components/Grid/index.js";
-import EducationCard from "@/components/EducationCard/index.js";
+import Section from "@/layouts/Section";
+import Grid from "@/components/Grid";
+import EducationCard from "@/components/EducationCard";
 
-const Benefits = (props) => {
+const Benefits = () => {
   const educationInfoItems = [
     {
       title: 'Holistic Learning Approach',

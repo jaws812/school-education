@@ -10,6 +10,7 @@ const Section = (props) => {
     description,
     titleId,
     flex,
+    rowGapClassName,
     extraAttrs
   } = props
 
@@ -33,6 +34,7 @@ const Section = (props) => {
       <div
         className={classNames(className, 'section__body', {
           [`section__body--${flex}`]: flex,
+          [`section__body--${rowGapClassName}`]: rowGapClassName,
         })}
         {...extraAttrs}
       >

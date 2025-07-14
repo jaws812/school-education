@@ -1,0 +1,20 @@
+.table-card__wrapper {
+  @include tablet {
+    overflow-x: auto;
+  }
+}
+
+.table-card {
+  min-width: 1000px;
+  padding: fluid(60, 30);
+  background-color: var(--color-white);
+  border-radius: var(--radius-12);
+  box-shadow: var(--box-shadow-desktop);
+  border: var(--border);
+
+  @include laptop {
+    margin: 8px;
+    border-radius: var(--radius-10);
+    box-shadow: var(-box-shadow-mobile);
+  }
+}

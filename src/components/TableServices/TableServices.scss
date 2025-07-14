@@ -1,0 +1,12 @@
+.table-services {
+  thead {
+    font-family: var(--font-family-accent), sans-serif;
+
+    tr {
+      th {
+        font-size: fluid-to-laptop(30, 24);
+        padding: fluid-to-laptop(20, 18) fluid-to-laptop(34, 30);
+      }
+    }
+  }
+}

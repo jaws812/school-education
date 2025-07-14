@@ -49,7 +49,6 @@ const Awards = () => {
         'data-js-slider-body': ''
       }}
     >
-
       <Slider
         sliderParams={{
           slidesPerView: 3,

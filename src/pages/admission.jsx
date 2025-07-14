@@ -1,4 +1,5 @@
 import TitleAdmissions from "@/sections/TitleAdmissions/index.js";
+import Structure from "@/sections/Structure/index.js";
 import Process from "@/sections/Process/index.js";
 
 export const metadata = {
@@ -10,6 +11,7 @@ export default function () {
     <>
       <TitleAdmissions />
       <Process />
+      <Structure />
     </>
   )
 }

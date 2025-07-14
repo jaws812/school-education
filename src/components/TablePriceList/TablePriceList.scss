@@ -1,0 +1,56 @@
+.table-price-list {
+  min-width: 700px;
+
+  display: grid;
+  row-gap: fluid(80, 40);
+}
+
+table {
+  width: 100%;
+  --tableBorder: var(--border);
+  border: var(--tableBorder);
+
+  border-collapse: separate;
+  border-radius: var(--radius-12);
+
+  @include laptop {
+    border-radius: var(--radius-10);
+  }
+
+  thead {
+    background-color: var(--color-orange-95);
+    height: 100%;
+    text-wrap: nowrap;
+  }
+
+  tbody {
+    text-wrap: nowrap;
+
+    tr:last-child {
+      td {
+        border-bottom: none;
+      }
+    }
+  }
+
+  th,
+  td {
+    font-size: fluid-to-laptop(20, 18);
+    border-bottom: var(--tableBorder);
+
+    &:not(:last-child) {
+      border-right: var(--tableBorder);
+    }
+  }
+
+  th {
+    text-align: left;
+    padding: fluid-to-laptop(25, 18) fluid-to-laptop(34, 30);
+  }
+
+  td {
+    padding: fluid-to-laptop(30, 24) fluid-to-laptop(34, 30);
+    background-color: var(--color-white);
+  }
+}
+
