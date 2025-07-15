@@ -5,7 +5,7 @@
 
   &__inner {
     position: relative;
-//    z-index: 1000;
+    z-index: 100;
     display: flex;
     gap: fluid(50, 20);
     align-items: center;
@@ -103,5 +103,49 @@
     @include tablet {
       border-radius: var(--radius-4);
     }
+  }
+
+  &__socials {
+
+  }
+
+  &__list {
+    //    display: grid;
+    //    gap: fluid-to-laptop(24, 20);
+  }
+
+  &__item {
+    background-color: var(--color-orange-99);
+    display: flex;
+    align-items: center;
+    column-gap: fluid-to-laptop(10, 8);
+    border: var(--border);
+    border-radius: var(--radius-12);
+    padding: fluid-to-laptop(20, 16);
+
+    @include laptop {
+      border-radius: var(--radius-10);
+    }
+
+    &-wrapper-link {
+      border: var(--border);
+      border-radius: var(--radius-6);
+      padding: fluid-to-laptop(8, 6);
+      background-color: var(--color-orange-97);
+    }
+
+    &-link {
+
+    }
+
+    &-icon {
+      @include square(fluid-to-laptop(24, 20));
+
+      @include laptop {
+        border-radius: var(--radius-4);
+      }
+    }
+
+
   }
 }

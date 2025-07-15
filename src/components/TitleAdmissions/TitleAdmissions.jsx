@@ -1,11 +1,7 @@
 import './TitleAdmissions.scss'
-import classNames from 'classnames'
 import Banner from "@/layouts/Banner/index.js";
 
-const TitleAdmissions = (props) => {
-  const {
-    className,
-  } = props
+const TitleAdmissions = () => {
 
   return (
     <Banner

@@ -33,6 +33,7 @@ const Mission = (props) => {
         {missionItems.map((missionItem, index) => (
           <MissionCard
             {...missionItem}
+            key={index}
           />
         ))}
       </Grid>

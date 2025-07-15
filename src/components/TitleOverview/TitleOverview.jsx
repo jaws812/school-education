@@ -1,8 +1,7 @@
 import './TitleOverview.scss'
-import classNames from 'classnames'
 import Banner from "@/layouts/Banner/index.js";
 
-const TitleOverview = (props) => {
+const TitleOverview = () => {
 
   return (
     <Banner

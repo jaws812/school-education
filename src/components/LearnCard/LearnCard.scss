@@ -27,19 +27,6 @@
     @include laptop {
       border-radius: var(--radius-10);
     }
-
-    /*    &::after {
-          position: absolute;
-          content: 'dsadsa';
-          width: 100px;
-          height: 100px;
-          top: 0;
-          left: 0;
-          background-color: var(--color-orange-95);
-          border: var(--border);
-          z-index: -1;
-        }*/
-
   }
 
   &__body {

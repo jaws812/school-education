@@ -7,8 +7,17 @@
 
   gap: var(--absoluteGap);
 
-  &__item {
-  }
+  //  &__item {
+  //    &:nth-child(3n-1) {
+  //      .learn-card {
+  //        &::before {
+  //          --imgHeight: #{fluid-to-laptop(304,227)};
+  //
+  //          top: calc(100% - 93px);
+  //        }
+  //      }
+  //    }
+  //  }
 
   &--2 {
     --gridColumns: 2;
@@ -42,7 +51,11 @@
     --absoluteGap: #{fluid-to-laptop(85,68)} 40px;
   }
 
-  &--process-gap{
+  &--process-gap {
     row-gap: fluid-to-laptop(100, 50);
+  }
+
+  &--small-gap {
+    --absoluteGap: #{fluid-to-laptop(24,20)};
   }
 }
