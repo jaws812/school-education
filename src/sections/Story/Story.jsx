@@ -2,10 +2,7 @@ import './Story.scss'
 import Section from "@/layouts/Section/index.js";
 import DateCard from "@/components/DateCard/index.js";
 
-const Story = (props) => {
-  const {
-    className,
-  } = props
+const Story = () => {
 
   const helpItems = [
     {
@@ -38,6 +35,7 @@ const Story = (props) => {
       title='Our History'
       description={'Founded with a passion for early education in 2005, our kindergarten school boasts a rich history of empowering young learners to reach their potential through innovative teaching methods and a supportive learning environment'}
       titleId='story-title'
+      id='history'
     >
       <div className="story">
         <ul className="story__list">

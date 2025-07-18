@@ -11,13 +11,16 @@ const Section = (props) => {
     titleId,
     flex,
     rowGapClassName,
-    extraAttrs
+    extraAttrs,
+    rowGapToTabs,
+    id,
   } = props
 
   return (
     <section
       className={classNames(className, 'section container')}
       aria-labelledby={titleId}
+      id={id}
     >
       <header className="section__header">
         <div className="section__info">
@@ -35,6 +38,7 @@ const Section = (props) => {
         className={classNames(className, 'section__body', {
           [`section__body--${flex}`]: flex,
           [`section__body--${rowGapClassName}`]: rowGapClassName,
+          [`section__body--${rowGapToTabs}`]: rowGapToTabs,
         })}
         {...extraAttrs}
       >

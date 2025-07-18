@@ -2,7 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: fluid-to-laptop(15, 10);
+  gap: fluid-to-laptop(15, 10);
+  flex-wrap: wrap;
 
   &__button {
     font-weight: 600;

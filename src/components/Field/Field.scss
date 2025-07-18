@@ -1,0 +1,60 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  row-gap: fluid(20, 10);
+  align-items: start;
+
+  &__label {
+    font-size: fluid-to-laptop(22, 20);
+    font-weight: 600;
+  }
+
+  &__required-star {
+    color: var(--color-orange-65);
+  }
+
+  &__body {
+    width: 100%;
+  }
+
+  &__control {
+
+    width: 100%;
+    height: fluid(90, 64);
+    padding-inline: fluid(30, 20);
+    color: var(--color-black);
+    background-color: var(--color-orange-99);
+    border: var(--border);
+    border-radius: var(--radius-8);
+
+    @include laptop {
+      border-radius: var(--radius-6);
+    }
+
+    @include hover {
+      border-color: var(--color-orange-65);
+    }
+
+    &:focus {
+      border: 1px dashed var(--color-orange-65);
+    }
+
+    &:user-invalid {
+      border-color: var(--color-red);
+    }
+
+    &:disabled {
+      @include disabled;
+    }
+
+    &::placeholder {
+      color: var(--color-gray-60);
+    }
+  }
+
+  textarea.field__control {
+    resize: vertical;
+    min-height: fluid(218, 161);
+    padding-block: fluid(30, 20);
+  }
+}

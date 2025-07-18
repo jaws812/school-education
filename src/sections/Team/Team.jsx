@@ -50,6 +50,7 @@ const Team = () => {
       title='Our Team Members'
       description='At Little Learners Academy, our teaching team is the heart of our educational journey. We take great pride in employing highly qualified and passionate educators who possess a deep understanding of early childhood development. Our teachers create a warm and engaging atmosphere, encouraging curiosity, instilling confidence, and fostering a love for learning.'
       titleId='team-title'
+      id='teachers'
     >
       <Grid columns={2}>
         {teamItems.map((teamItem, index) => (

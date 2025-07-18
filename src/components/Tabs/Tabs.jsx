@@ -1,20 +1,21 @@
 import './Tabs.scss'
 import classNames from 'classnames'
 import getIdFromTitle from "@/utils/getIdFromTitle.js";
-import TabsNavigation
-  from "@/components/Tabs/components/TabsNavigation/index.js";
 
 const Tabs = (props) => {
   const {
     className,
-    title,
     items = [],
+    navigationTargetElementId = null,
+
   } = props
 
   return (
     <div
       className={classNames(className, 'tabs')}
-      data-js-tabs=''
+      data-js-tabs={JSON.stringify({
+        navigationTargetElementId,
+      })}
     >
       <div className="tabs__body">
         {items.map((item, index) => {

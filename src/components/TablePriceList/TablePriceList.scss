@@ -7,10 +7,12 @@
 
 table {
   width: 100%;
-  --tableBorder: var(--border);
-  border: var(--tableBorder);
+  --tableBorderWidth: var(--border-width-s);
+  --tableBorderColor: var(--color-black);
+  --tableBorder: var(--tableBorderWidth) solid var(--tableBorderColor);
 
-  border-collapse: separate;
+  box-shadow: 0 0 0 var(--tableBorderWidth) var(--tableBorderColor);
+  overflow: hidden;
   border-radius: var(--radius-12);
 
   @include laptop {

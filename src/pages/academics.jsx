@@ -14,7 +14,7 @@ export default function () {
       <TitleAcademics />
       <Features />
       <Learn />
-      {/*<Gallery />*/}
+      <Gallery />
     </>
   )
 }

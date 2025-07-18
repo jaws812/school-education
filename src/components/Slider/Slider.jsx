@@ -7,7 +7,7 @@ const defaultSliderParams = {
   slidesPerGroup: 3,
   spaceBetween: 50,
   breakpoints: {
-    /*0: {
+    0: {
       slidesPerView: 2,
       slidesPerGroup: 1,
       spaceBetween: 20,
@@ -21,12 +21,16 @@ const defaultSliderParams = {
       slidesPerView: 4,
       slidesPerGroup: 4,
       spaceBetween: 20,
-    },*/
+    },
     1024: {
+      slidesPerView: 4,
+      slidesPerGroup: 4,
       spaceBetween: 40,
       allowTouchMove: false,
     },
     1441: {
+      slidesPerView: 4,
+      slidesPerGroup: 4,
       spaceBetween: 50,
       allowTouchMove: false,
     }
@@ -45,7 +49,7 @@ const Slider = (props) => {
       className={classNames('slider', {
         'slider--beyond-the-viewport-on-mobile-s': isBeyondTheViewportOnMobileS,
       })}
-      data-js-slider={JSON.stringify({
+      data-js-slider-main={JSON.stringify({
         sliderParams,
       })}
 

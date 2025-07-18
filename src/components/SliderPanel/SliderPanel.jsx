@@ -8,9 +8,15 @@ const SliderPanel = (props) => {
 
   return (
     <div className="slider-panel">
-      <p className='slider-panel__text'>{title}</p>
-      <div className="slider-panel__buttons">
+      {title && (
+        <p className='slider-panel__text'>{title}</p>
+      )}
+      <div
+        className="slider-panel__buttons"
+        data-js-slider-navigation=''
+      >
         <ButtonSlider
+          className='slider-panel__button'
           classNameIcon='slider-panel__icon'
           hasFill
           label='Previous slide'
@@ -20,6 +26,7 @@ const SliderPanel = (props) => {
           }}
         />
         <ButtonSlider
+          className='slider-panel__button'
           classNameIcon='slider-panel__icon'
           hasFill
           label='Next slide'

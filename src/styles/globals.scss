@@ -1,4 +1,8 @@
 html {
+  *:focus {
+    outline-color: var(--color-black);
+  }
+
   &.is-lock {
     overflow: hidden;
   }
@@ -9,7 +13,7 @@ body {
 
   display: flex;
   flex-direction: column;
-  font-family: var(--font-family-base);
+  font-family: var(--font-family-base),sans-serif;
   color: var(--color-gray-20);
   background-color: var(--color-orange-97);
   font-weight: 500;
@@ -26,7 +30,7 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   color: var(--color-gray-10);
-  font-family: var(--font-family-accent);
+  font-family: var(--font-family-accent),sans-serif;
 }
 
 h1, .h1 {
@@ -99,8 +103,8 @@ a {
   min-width: 0;
 }
 
-.header,
-.content > *:not(:nth-last-child(1)),
-.footer {
-//  display: none !important;
-}
+//.header,
+//.content > *:not(:nth-last-child(1)),
+//.footer {
+//    display: none !important;
+//}

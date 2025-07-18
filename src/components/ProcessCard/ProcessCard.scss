@@ -24,7 +24,7 @@
   &__title {
     @include fluid-text(40, 26);
     font-weight: 700;
-    font-family: var(--font-family-accent);
+    font-family: var(--font-family-accent), sans-serif;
   }
 
   &__action {
@@ -61,7 +61,7 @@
   }
 
   &__number {
-    font-family: var(--font-family-accent);
+    font-family: var(--font-family-accent), sans-serif;
     font-weight: 800;
     @include fluid-text(60, 40);
   }

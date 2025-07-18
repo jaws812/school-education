@@ -1,13 +1,10 @@
 import './Mission.scss'
-import classNames from 'classnames'
 import Section from "@/layouts/Section/index.js";
 import Grid from "@/components/Grid/index.js";
 import MissionCard from "@/components/MissionCard/index.js";
 
-const Mission = (props) => {
-  const {
-    className,
-  } = props
+const Mission = () => {
+
 
   const missionItems = [
     {
@@ -28,6 +25,7 @@ const Mission = (props) => {
       title='Our Mission & Visions'
       description='We are here to provide a nurturing and inclusive environment where young minds can thrive, fostering a love for learning and personal growth.'
       titleId='mission-title'
+      id='mission'
     >
       <Grid columns={2}>
         {missionItems.map((missionItem, index) => (

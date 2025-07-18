@@ -10,7 +10,7 @@ const TitleContact = () => {
       badge='Contact Us'
       title='Feel Free To Connect With Us'
       description={'We value open communication and are eager to assist you with any inquiries. Feel free to reach out to us through any of the following contact methods'}
-      actions={true}
+      actions
     />
   )
 }

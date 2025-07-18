@@ -1,0 +1,61 @@
+.information {
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: fluid(50, 30);
+    position: relative;
+    padding: fluid(100, 30);
+    padding-top: fluid(120, 80);
+    background-color: var(--color-white);
+    border: var(--border);
+    box-shadow: var(--box-shadow-desktop);
+    border-radius: var(--radius-12);
+
+    @include laptop {
+      box-shadow: var(--box-shadow-mobile);
+      border-radius: var(--radius-10);
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &-cell {
+      &--wide {
+        grid-column: -1 / 1;
+      }
+    }
+
+    &-agreement {
+      width: 100%;
+      padding-block: fluid(30, 16);
+    }
+  }
+
+  &__actions {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    translate: -50% -50%;
+    display: flex;
+    column-gap: 20px;
+  }
+
+  &__action {
+    @include flex-center(true);
+    padding: fluid-to-laptop(20, 16) fluid(60, 24);
+    border: var(--border);
+    background-color: var(--color-orange-90);
+    border-radius: var(--radius-8);
+
+    @include laptop {
+      border-radius: var(--radius-6);
+
+    }
+
+    &-icon {
+      @include square(fluid-to-laptop(34, 26));
+    }
+  }
+
+}

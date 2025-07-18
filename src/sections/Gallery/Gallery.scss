@@ -1,4 +1,14 @@
 .gallery {
   display: grid;
   row-gap: fluid(295, 197);
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(295, 197);
+  }
 }

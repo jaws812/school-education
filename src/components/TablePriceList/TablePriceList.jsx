@@ -1,5 +1,4 @@
 import './TablePriceList.scss'
-import classNames from 'classnames'
 
 const TablePriceList = (props) => {
   const {

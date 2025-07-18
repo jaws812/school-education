@@ -1,8 +1,5 @@
 import './ProcessCard.scss'
-
-
 const ProcessCard = (props) => {
-
   const {
     title,
     description,

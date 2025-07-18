@@ -18,4 +18,8 @@
       --iconSize: #{fluid-to-laptop(30, 24)};
     }
   }
+
+  &__button {
+    @include square(fluid(58, 48));
+  }
 }

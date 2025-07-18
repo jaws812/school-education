@@ -10,8 +10,8 @@ const TabsNavigation = (props) => {
     items = [],
   } = props
 
-  const titleFormatted = getIdFromTitle(title) //titleFormatted = 'plans-tabs'
-  const titleId = `${titleFormatted}-title` //titleId = 'plans-tabs-title'
+  const titleFormatted = getIdFromTitle(title)
+  const titleId = `${titleFormatted}-title`
 
   return (
     <div
@@ -30,7 +30,6 @@ const TabsNavigation = (props) => {
         const titleFormatted = getIdFromTitle(item.title)
         const buttonId = `${titleFormatted}-tab`
         const contentId = `${titleFormatted}-tabpanel`
-
         return (
           <div
             className={classNames(className, 'tabs-navigation__button', {

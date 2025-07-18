@@ -7,19 +7,72 @@ const Footer = () => {
   const menuItems = [
     {
       title: 'Home',
-      links: ['Features', 'Our Testimonials', 'FAQ'],
+      titleHref: './',
+      links: [
+        {
+          label: 'Benefits',
+          href: './#benefits',
+        },
+        {
+          label: 'Our Testimonials',
+          href: './#testimonials',
+        },
+        {
+          label: 'FAQ',
+          href: './#faq',
+        },
+      ]
     },
     {
       title: 'About Us',
-      links: ['Our Mission', 'Our Vission', 'Awards and Recognitions', 'History', 'Teachers'],
+      titleHref: './about',
+      links: [
+        {
+          label: 'Our Mission & Our Vission',
+          href: './about#mission',
+        },
+        {
+          label: 'Awards and Recognitions',
+          href: './about#awards',
+        },
+        {
+          label: 'History',
+          href: './about#history',
+        },
+        {
+          label: 'Teachers',
+          href: './about#teachers',
+        },
+
+      ],
     },
     {
       title: 'Academics',
-      links: ['Special Features', 'Gallery'],
+      titleHref: './academics',
+      links: [
+        {
+          label: 'Special Features',
+          href: './academics#special-features',
+        },
+        {
+          label: 'Gallery',
+          href: './academics#gallery',
+        },
+      ]
     },
     {
       title: 'Contact Us',
-      links: ['Information', 'Map & Direction'],
+      titleHref: './contact',
+      links: [
+        {
+          label: 'Information',
+          href: './contact#information',
+        },
+        {
+          label: 'Map & Direction',
+          href: './contact#map',
+        },
+      ]
     },
   ]
 
@@ -115,14 +168,14 @@ const Footer = () => {
             </div>
           </div>
           <div className="footer__menu">
-            {menuItems.map(({title, links}, index) => (
+            {menuItems.map(({title, titleHref, links}, index) => (
               <div
                 className="footer__menu-column"
                 key={index}
               >
                 <a
                   className="footer__menu-title"
-                  href="./"
+                  href={titleHref}
                 >
                   {title}
                 </a>
@@ -135,9 +188,9 @@ const Footer = () => {
                       >
                         <a
                           className="footer__menu-link"
-                          href="./"
+                          href={link.href}
                         >
-                          {link}
+                          {link.label}
                         </a>
                       </li>
                     ))}

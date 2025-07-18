@@ -45,8 +45,9 @@ const Awards = () => {
       description={'Little Learners Academy takes pride in our commitment to delivering high-quality education and outstanding student experiences. We are honored to have received various awards and recognitions for our dedication to early childhood education. These accolades reflect our team\'s relentless efforts in creating an exceptional learning environment for our students.'}
       titleId='awards-title'
       flex='flex-column'
+      id='awards'
       extraAttrs={{
-        'data-js-slider-body': ''
+        'data-js-slider': ''
       }}
     >
       <Slider

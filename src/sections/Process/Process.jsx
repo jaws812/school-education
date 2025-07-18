@@ -3,10 +3,7 @@ import Section from "@/layouts/Section/index.js";
 import ProcessCard from "@/components/ProcessCard/index.js";
 import Grid from "@/components/Grid/index.js";
 
-const Process = (props) => {
-  const {
-    className,
-  } = props
+const Process = () => {
 
   const processItems = [
     {

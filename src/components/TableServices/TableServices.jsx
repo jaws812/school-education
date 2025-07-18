@@ -1,5 +1,4 @@
 import './TableServices.scss'
-import classNames from 'classnames'
 
 const TableServices = (props) => {
   const {

@@ -1,5 +1,4 @@
 import './TableCard.scss'
-import classNames from 'classnames'
 
 const TableCard = (props) => {
   const {

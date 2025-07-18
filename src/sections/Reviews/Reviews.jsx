@@ -52,8 +52,9 @@ const Reviews = () => {
       description='Our testimonials are heartfelt reflections of the nurturing environment we provide, where children flourish both academically and emotionally.'
       titleId='reviews-title'
       flex='flex'
+      id='testimonials'
       extraAttrs={{
-        'data-js-slider-body': ''
+        'data-js-slider': ''
       }}
     >
       <ButtonSlider

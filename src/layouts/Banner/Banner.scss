@@ -105,15 +105,6 @@
     }
   }
 
-  &__socials {
-
-  }
-
-  &__list {
-    //    display: grid;
-    //    gap: fluid-to-laptop(24, 20);
-  }
-
   &__item {
     background-color: var(--color-orange-99);
     display: flex;
@@ -134,10 +125,6 @@
       background-color: var(--color-orange-97);
     }
 
-    &-link {
-
-    }
-
     &-icon {
       @include square(fluid-to-laptop(24, 20));
 
@@ -145,7 +132,6 @@
         border-radius: var(--radius-4);
       }
     }
-
 
   }
 }

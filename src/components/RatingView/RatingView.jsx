@@ -1,5 +1,4 @@
 import './RatingView.scss'
-import classNames from 'classnames'
 
 const RatingView = (props) => {
   const {

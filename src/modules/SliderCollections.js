@@ -12,23 +12,27 @@ class Slider {
     nextButton: '[data-js-slider-next-button]',
     previousButtonMobile: '[data-js-slider-previous-button-mobile]',
     nextButtonMobile: '[data-js-slider-next-button-mobile]',
-    sliderBody: '[data-js-slider-body]',
+    sliderMain: '[data-js-slider-main]',
+    panelButtons: '[data-js-slider-navigation]',
   }
 
   constructor(rootElement) {
-    this.rootElement = rootElement
-    this.swiperElement = this.rootElement.querySelector(this.selectors.swiper)
-    this.params = getParams(this.rootElement, this.selectors.root)
-    this.sliderBody = document.querySelector(this.selectors.sliderBody)
-    this.previousButtonElement = this.sliderBody.querySelector(this.selectors.previousButton)
-    this.nextButtonElement = this.sliderBody.querySelector(this.selectors.nextButton)
-    this.previousButtonMobileElement = this.sliderBody.querySelector(this.selectors.previousButtonMobile)
-    this.nextButtonMobileElement = this.sliderBody.querySelector(this.selectors.nextButtonMobile)
+    this.rootElement = rootElement//
+    this.sliderBodyMainElement = this.rootElement.querySelector(this.selectors.sliderMain)//
+    this.swiperElement = this.rootElement.querySelector(this.selectors.swiper)//
+    this.params = getParams(this.sliderBodyMainElement, this.selectors.sliderMain)
+    this.previousButtonElement = this.rootElement.querySelector(this.selectors.previousButton)
+    this.nextButtonElement = this.rootElement.querySelector(this.selectors.nextButton)
+    this.previousButtonMobileElement = this.rootElement.querySelector(this.selectors.previousButtonMobile)
+    this.nextButtonMobileElement = this.rootElement.querySelector(this.selectors.nextButtonMobile)
+
     this.init()
   }
 
   init() {
     const navigation = {
+      // prevEl: this.previousButtonElement,
+      // nextEl: this.nextButtonElement,
       prevEl: document.documentElement.clientWidth <= 768 ? this.previousButtonMobileElement : this.previousButtonElement,
       nextEl: document.documentElement.clientWidth <= 768 ? this.nextButtonMobileElement : this.nextButtonElement,
     };
