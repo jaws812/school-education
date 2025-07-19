@@ -5,7 +5,7 @@
 
   &__inner {
     position: relative;
-    z-index: 100;
+    z-index: -1;
     display: flex;
     gap: fluid(50, 20);
     align-items: center;

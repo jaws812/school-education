@@ -11,9 +11,6 @@
   text-align: center;
 
   &__promo {
-    position: relative;
-    z-index: 1;
-
     &-inner {
       padding-block: fluid-to-laptop(14, 12);
       border: var(--border);
