@@ -1,0 +1,28 @@
+.scroll {
+  position: sticky;
+  z-index: 100;
+  @include square(fluid(50, 40));
+  left: calc(95% - 40px);
+  bottom: 2%;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  border: var(--border);
+  transition-duration: var(--transition-duration);
+
+  @include hover {
+    border-color: var(--color-orange-65);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    @include square(fluid(30, 25));
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    rotate: -90deg;
+    background-image: url("src/assets/icons/arrow-right.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}

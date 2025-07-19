@@ -3,6 +3,7 @@ import {Head} from 'minista'
 import Header from '@/layouts/Header'
 import Content from '@/layouts/Content'
 import Footer from '@/layouts/Footer'
+import Scroll from "@/components/Scroll/index.js";
 
 export default function (props) {
   const {
@@ -49,6 +50,7 @@ export default function (props) {
       <Content>
         {children}
       </Content>
+      <Scroll />
       <Footer />
     </>
   )
