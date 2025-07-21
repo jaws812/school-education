@@ -3,7 +3,7 @@ import path from 'path'
 
 export default defineConfig({
   root: '',
-  base: '/',
+  base: "/school-education/",
   public: 'public',
   out: 'dist',
   assets: {

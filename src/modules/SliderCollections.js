@@ -30,11 +30,20 @@ class Slider {
   }
 
   init() {
+    const isMobile = document.documentElement.clientWidth <= 768
+
+    const previousMobileButton = this.previousButtonMobileElement
+    const nextMobileButton = this.nextButtonMobileElement
+
+    const previousDefaultButton = this.previousButtonElement
+    const nextDefaultButton = this.nextButtonElement
+
+    const previousElement = isMobile && previousMobileButton ? previousMobileButton : previousDefaultButton
+    const nextElement = isMobile && nextMobileButton ? nextMobileButton : nextDefaultButton
+
     const navigation = {
-      // prevEl: this.previousButtonElement,
-      // nextEl: this.nextButtonElement,
-      prevEl: document.documentElement.clientWidth <= 768 ? this.previousButtonMobileElement : this.previousButtonElement,
-      nextEl: document.documentElement.clientWidth <= 768 ? this.nextButtonMobileElement : this.nextButtonElement,
+      prevEl: previousElement,
+      nextEl: nextElement,
     };
 
     new Swiper(this.swiperElement, {

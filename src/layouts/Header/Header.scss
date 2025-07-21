@@ -15,10 +15,10 @@
       padding-block: fluid-to-laptop(14, 12);
       border: var(--border);
       border-radius: var(--radius-8);
-      background: url("src/assets/images/bg-promo.png") center/cover no-repeat;
+      background: url("../../assets/images/header/bg-promo.png") center/cover no-repeat;
 
       @include mobile-s {
-        background: url("src/assets/images/bg-promo-mobile.png") center/cover no-repeat;
+        background: url("../../assets/images/header/bg-promo-mobile.png") center/cover no-repeat;
       }
     }
 
